@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonte-inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    /* Adapte o caminho e formato conforme necessário */
+}
+
+@font-face {
+    font-family: 'Rowdies';
+    src: url('../fonte-rowdies/Rowdies-Bold.ttf') format('truetype');
+    /* Adapte o caminho e formato conforme necessário */
+}
+
+body {
+    margin: 0;
+    /* background-image: url(../imagens_sesi/background.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+header {
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 12px;
+    background-color: #062F6D;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    font-family: '  Rowdies';
+}
+
+.carousel-item img {
+    filter: blur(2px);
+    border-radius: 12px;
+}
+
+.carousel-caption h5, p{
+    color: white;
+    font-family: 'Inter';
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+
+
+*{
+  font-family: 'Gotu', sans-serif;
+}
+
+body {
+  background-image: url(img/677335c9-3e13-4d6b-bc7a-ece518626205.jpg);
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Form */
+#form-container {
+  background-color: #ffffff88;
+  border-radius: 20px;
+  box-shadow: .5px 10px 15px rgba(0, 0, 0, 0.2);
+  margin: 25px auto;
+  padding: 25px;
+  align-items: center;
+  max-width: 450px;
+}
+
+
+.btn-danger {
+  border-radius: 70px;
+  width: 200px;
+  height: 50px;
+}
+
+
+@media(max-width: 400px) {
+  .btn-danger {
+    width: 100px;
+  }
+}
+
+.input-group-text {
+  background-color: transparent;
+  border: none;
+}
+
+.input-group-text i{
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  z-index: 1;
+}
+
+/* Alinha o texto do placeholder um pouco para a direita */
+.input-group input.form-control::placeholder {
+  padding-left: 20px; /* Ajuste o valor conforme necessário */
+}
+

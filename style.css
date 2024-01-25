@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+.barra{
+    background-color: #062f6d;
+    height: 30px;
+    width: 100%;
+}
+.container{
+    con
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ancoras {
+    list-style: none;
+}
+
+.ancoras li a{
+    margin-right: 5px;
+    color: #062f6d;
+    text-decoration: none;
+}
+
