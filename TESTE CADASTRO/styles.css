@@ -4,6 +4,7 @@
 
 * {
   font-family: 'Gotu', sans-serif;
+  
 }
 
 :root {
@@ -13,15 +14,12 @@
   --font-rowdies: 'Rowdies', sans-serif;
 
   /* CORES */
-  --cor-azul-escuro: #062F6D;
+  --cor-principal: #062F6D;
+  --cor-secundaria: #155FD5;
+  --cor-secundaria-hover: #2b75ec;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
+
 
 body {
   background-image: url(img/677335c9-3e13-4d6b-bc7a-ece518626205.jpg);
@@ -30,6 +28,23 @@ body {
   background-position: center;
   overflow: hidden;
 }
+
+/* HEADER__________________ */
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 35px solid var(--cor-principal);
+  border-bottom: 1px solid var(--cor-principal);
+  padding-bottom: 5px;
+}
+
+
+
+/* HEADER___________________ */
 
 /* Form */
 #form-container {
@@ -43,7 +58,7 @@ body {
 }
 
 h2 {
-  color: var(--cor-azul-escuro);
+  color: var(--cor-principal);
   font-family: var(--font-rowdies);
   font-size: 40px;
   font-weight: 400; /* Use um valor maior que 700 (bolder) para aumentar a espessura */
@@ -54,7 +69,7 @@ h2 {
   border-radius: 70px;
   width: 200px;
   height: 40px;
-  background-color: var(--cor-azul-escuro);
+  background-color: var(--cor-principal);
   transition: opacity 0.5s ease; /* Adiciona uma transição suave de 0.5 segundos para a cor de fundo e a opacidade */
 }
 
@@ -119,6 +134,8 @@ h2 {
   width: auto;
   gap: 35px;
 }
+
+
 
 .cadastre-se {
   color: black;

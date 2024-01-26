@@ -1,0 +1,23 @@
+/* header */
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+#logo img {
+    height: 50px;
+    /* width: 50px; */
+}
+
+.search {
+    position: relative;
+}
+
+.search button {
+    position: absolute;
+}
+
+.options-list-header ul {
+    list-style-type: none;
+}
