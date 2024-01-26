@@ -141,3 +141,48 @@ img {
 #item-2:checked ~ .cards #song-5 img {
     box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }
+
+/* ____________________________ */
+/* Footer */
+/* Footer */
+.footer-cima {
+    display: inline-flex;
+    background-color: #062F6D; /* Substitua pela cor desejada */
+    width: 100%;
+    color: white;
+    margin-top: 50px;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+}
+
+.logo-sesi {
+    width: 200px;
+    height: 55px;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.footer-cima label {
+    font-size: 12.5px;
+}
+
+.footer-cima b {
+    font-size: 16px;
+}
+
+.footer-cima a {
+    font-size: 18.5px;
+    cursor: pointer;
+}
+
+.footer-cima a:hover {
+    text-decoration: underline;
+}
+
+.footer-baixo {
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #333; /* Substitua pela cor desejada */
+}
