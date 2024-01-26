@@ -1,15 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
 
-*{
+* {
   font-family: 'Gotu', sans-serif;
+}
+
+:root {
+
+  /* FONTES */
+  --font-gotu: 'Gotu', sans-serif;
+  --font-rowdies: 'Rowdies', sans-serif;
+
+  /* CORES */
+  --cor-azul-escuro: #062F6D;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 body {
   background-image: url(img/677335c9-3e13-4d6b-bc7a-ece518626205.jpg);
-  width: auto;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center;
   overflow: hidden;
 }
 
@@ -17,22 +35,40 @@ body {
 #form-container {
   background-color: #ffffff88;
   border-radius: 20px;
-  box-shadow: .5px 10px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.5px 10px 15px rgba(0, 0, 0, 0.2);
   margin: 25px auto;
   padding: 25px;
   align-items: center;
-  max-width: 450px;
+  max-width: 600px;
+}
+
+h2 {
+  color: var(--cor-azul-escuro);
+  font-family: var(--font-rowdies);
+  font-size: 40px;
+  font-weight: 400; /* Use um valor maior que 700 (bolder) para aumentar a espessura */
 }
 
 
-.btn-danger {
+.entrar {
   border-radius: 70px;
   width: 200px;
-  height: 50px;
+  height: 40px;
+  background-color: var(--cor-azul-escuro);
+  transition: opacity 0.5s ease; /* Adiciona uma transição suave de 0.5 segundos para a cor de fundo e a opacidade */
+}
+
+.entrar:hover {
+  opacity: 0.7;
+}
+
+.entrar-span {
+  color: white;
+  opacity: 1;
 }
 
 
-@media(max-width: 400px) {
+@media (max-width: 400px) {
   .btn-danger {
     width: 100px;
   }
@@ -43,15 +79,67 @@ body {
   border: none;
 }
 
-.input-group-text i{
+
+
+.input-group-text i {
   position: absolute;
   margin-top: 20px;
   margin-left: 20px;
   z-index: 1;
 }
 
+
 /* Alinha o texto do placeholder um pouco para a direita */
 .input-group input.form-control::placeholder {
   padding-left: 20px; /* Ajuste o valor conforme necessário */
 }
 
+.esqueceu-senha {
+  color: black;
+  text-decoration: 0;
+  font-size: 13px;
+  opacity: 70%;
+  transition: opacity 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
+}
+
+.esqueceu-senha:hover {
+  opacity: 100%;
+  color: black;
+  text-decoration: underline;
+}
+
+.redes {
+    width: 60px; /* Ajuste o tamanho conforme necessário */
+    height: 60px; /* Ajuste o tamanho conforme necessário */
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.redes-sociais {
+  width: auto;
+  gap: 35px;
+}
+
+.cadastre-se {
+  color: black;
+  text-decoration: 0;
+  font-size: 11px;
+  opacity: 100%;
+  transition: opacity 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
+
+}
+
+.cadastre-se:hover {
+  opacity: 70%;
+  text-decoration: underline;
+  color: black;
+}
+
+.redes-imagens {
+  opacity: 1;
+  transition: opacity 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
+}
+
+.redes-imagens:hover {
+  opacity: 0.7;
+}
