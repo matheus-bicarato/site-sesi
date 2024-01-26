@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>SESI - Contato</title>
 </head>
-<body>
     <header>
         <a href="#" id="logo">
             <img src="assets/logo.png" alt="logo">
@@ -21,11 +20,86 @@
     
         <nav class="options-list-header">
             <ul>
-                <li><a href="#"><i class="bi bi-person-circle"></i>  PERFIL / ENTRAR</a></li>
+                <li><a href="#"><i class="bi bi-person"></i>  PERFIL / ENTRAR</a></li>
                 <li><a href="#"><i class="bi bi-dribbble"></i>   NOSSAS ATIVIDADES</a></li>
                 <li><a href="#"><i class="bi bi-telephone"></i>   FALE COM NOSSA EQUIPE</a></li>
             </ul>
         </nav>
     </header>
-</body>
+
+    <body>
+        <section class="center">
+            <section class="section-right">
+                <h1 class="title-right">Entre em contato<br> com o SESI</h1>
+    
+                <form class="form-contact">
+                    <!-- parte da frente do formulário -->
+                    <div class="front">
+                        <h2>Preencha o formulário</h2>
+    
+                        <div class="input-form">
+                            <label>Seu nome *</label>
+                            <input type="text" name="nome" required>
+                        </div>
+                        <div class="input-form">
+                            <label>E-mail *</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="input-form">
+                            <label>Celular *</label>
+                            <input type="text" name="cell" required>
+                        </div>
+                        <div class="input-form">
+                            <label>Mensagem *</label>
+                            <textarea name="msg" cols="30" rows="6" required></textarea>
+                        </div>
+    
+                        <button type="submit" onclick="go_back()" class="button-submit">Enviar mensagem</button>
+                    </div>
+    
+                    <div class="back">
+                        <img src="assets/icon-correct.png" alt="correct">
+    
+                        <h1>Contato enviado com sucesso</h1>
+    
+                        <button onclick="go_front()" class="button-submit">Enviar outra mensagem</button>
+                    </div>
+                </form>
+            </section>
+    
+            <section class="section-left">
+                <h1>Onde estamos?</h1>
+    
+                <div class="map">
+                    <!-- legenda -->
+                    <label>
+                        Sesi Santo André - 166 <br>
+                        Praça Dr. Armando de Arruda Pereira, 100 - São Paulo - SP
+                    </label>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14619.901772090938!2d-46.545160953343974!3d-23.641050469838596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42bea5555555%3A0x304c99916fe0aa3f!2sSesi%20Santo%20Andr%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1706281140348!5m2!1spt-BR!2sbr" width="350" height="125" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                    <label>
+                        <b>Fale conosco</b><br>
+                        <u>(11) 4996-8600</u>
+                    </label>
+
+                    <nav class="sociais">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </section>
+    </body>
+
+    <footer>
+        <img src="" alt="logo-sesi">
+
+        
+    </footer>
+    <script src="script.js"></script>
 </html>
