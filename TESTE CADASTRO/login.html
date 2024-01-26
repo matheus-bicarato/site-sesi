@@ -17,44 +17,69 @@
 </head>
 
 <body>
-   <header>
+    
 
-   </header>
-
-    <div class="container col-11 col-md-9" id="form-container">
+    <div class="container col-11 col-md-9 d-flex align-items-center justify-content-center" id="form-container">
         <div class="text-center mx-auto">
 
             <br>
 
-            <h2>Login</h2>
+            <h2>LOGIN</h2>
 
             <br>
 
             <form>
                 <!-- Campo de E-mail -->
-                <div class="mb-3 input-group input-group-sm">
-                    <label for="email" class="form-label visually-hidden">E-mail:</label>
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                    <div class="mb-3 input-group input-group-sm">
+                        <label for="email" class="form-label visually-hidden">E-mail:</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                        </div>
+                        <input type="email" class="form-control form-control-sm" id="email" placeholder="Email / CPF" style="border-radius: 10px; margin-right: 20px;">
                     </div>
-                    <input type="email" class="form-control form-control-sm" id="email" placeholder="Email / CPF">
-                </div>
+
                 
 
-                <!-- Campo de E-mail -->
+                <!-- Campo da Senha -->
                 <div class="mb-3 input-group input-group-sm">
                     <label for="senha" class="form-label visually-hidden">Senha:</label>
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="bi bi-lock"></i></span>
                     </div>
-                    <input type="password" class="form-control form-control-sm" id="senha" placeholder="Sua senha">
+                    <input type="password" class="form-control form-control-sm" id="senha" placeholder="Sua senha" style="border-radius: 10px;  margin-right: 20px;">
                 </div>
 
                 <br>
 
-                <!-- Botão de Login (exemplo) -->
-                <button type="submit" class="btn btn-danger">Entrar</button>
+                <!-- Botão de Entrar -->
+                <button type="submit" class="btn btn entrar"><span class="entrar-span">Entrar</span></button>
             </form>
+
+            <div>
+                <a href="#" class="esqueceu-senha">esqueceu a senha?</a>
+            </div>
+
+            <br>
+
+
+            <div class="redes-sociais d-flex align-items-center justify-content-center">
+                <div class="facebook">
+                    <a href="#" class="redes-imagens">
+                        <img src="img/facebook.png" alt="Facebook" class="redes rounded-circle img-fluid">
+                    </a>
+                </div>
+                <div class="gmail">
+                    <a href="#" class="redes-imagens">
+                        <img src="img/G+.png" alt="Gmail" class="redes rounded-circle img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+                <a href="#" class="cadastre-se">Não tem cadastro? <span style="color: red;">CADASTRE-SE</span></a>
+            </div>
         </div>
     </div>
 
