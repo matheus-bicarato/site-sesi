@@ -1,67 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Modalidades Extracurriculares</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modelos Extracurrriculares</title>
 </head>
-
 <body>
-    <!-- Header -->
+
     <header>
-    <h1>MODALIDADES EXTRACURRICULARES</h1>
+        <h1>MODALIDADES EXTRACURRICULARES</h1>
     </header>
 
-    <!-- _______________________________ -->
-    <!-- Body -->
-    <div class="d-flex justify-content-center align-items-center vh-200">
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" style="max-width: 1200px; height: 600px;">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <!-- <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+    <div class="container">
+        <input type="radio" name="slider" id="item-1" checked>
+        <input type="radio" name="slider" id="item-2">
+        <input type="radio" name="slider" id="item-3">
+        <input type="radio" name="slider" id="item-4">
+        <input type="radio" name="slider" id="item-5">
+        <div class="cards">
+          <label class="card" for="item-1" id="song-1">
+            <img src="../imagens_sesi/academia.jpg">
+          </label>
+          <label class="card" for="item-2" id="song-2">
+            <img src="../imagens_sesi/ginásio.jpg.jpg">
+          </label>
+          <label class="card" for="item-3" id="song-3">
+            <img src="../imagens_sesi/area_de_lazer2.jpg">
+          </label>
+          <label class="card" for="item-4" id="song-4">
+            <img src="../imagens_sesi/piscinas1.jpg">
+          </label>
+          <label class="card" for="item-5" id="song-5">
+            <img src="../imagens_sesi/quadra1.jpg">
+          </label>
         </div>
-        <div class="carousel-inner">
-
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="../imagens_sesi/final1.png" class="d-block w-100" style="width: 1200px; height: 600px;" alt="...">
-            <!-- <div class="carousel-caption d-none d-md-block">
-              <h5>ACADEMIAS</h5>
-              <p>Pratique diversos esportes em nossas academias!</p>
-            </div> -->
-          </div>
-
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="../imagens_sesi/final2.png" class="d-block w-100" style="width: 1200px; height: 600px;" alt="...">
-            <!-- <div class="carousel-caption d-none d-md-block">
-              <h5>PISCINAS</h5>
-              <p>De um grande pulo em nossa piscinas Semi-olimpicas!</p>
-            </div> -->
-          </div>
-
-          <!-- <div class="carousel-item" data-bs-interval="2000">
-            <img src="../imagens_sesi/ginásio.jpg" class="d-block w-100" style="max-width: 900px; height: 600px;" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>GINÁSIO</h5>
-              <p>Dê uma volta pelos nossos Ginásios enormes!</p>
-            </div>
-          </div> -->
-
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
     </div>
-        <!-- _________________________________________ -->
-    
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

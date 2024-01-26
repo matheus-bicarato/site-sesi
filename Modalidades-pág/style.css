@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'Inter';
     src: url('../fonte-inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
@@ -10,37 +16,128 @@
     /* Adapte o caminho e formato conforme necessário */
 }
 
+html,
 body {
-    margin: 0;
-    /* background-image: url(../imagens_sesi/background.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center; */
+    width: 100%;
+    height: 100%;
+}  
+
+body {
+    /* Remova a propriedade display: flex do corpo */
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    background: white;
+    transition: background 0.4s ease-in;
 }
 
 header {
-    margin-top: 0;
-    margin-bottom: 20px;
-    padding: 12px;
-    background-color: #062F6D;
-}
-
-header h1 {
-    color: white;
+    /* Adicione estas propriedades ao cabeçalho */
     text-align: center;
-    font-family: '  Rowdies';
+    padding: 24px;
+    margin: -30px;
+    background-color: #062F6D; /* Adicione a cor desejada */
+    color: white; /* Adicione a cor desejada */
+    font-family: 'Rowdies';
 }
 
-/* .carousel-item img {
-    filter: blur(2px);
-    border-radius: 12px;
-} */
-
-.carousel-caption h5, p{
-    color: white;
-    font-family: 'Inter';
+input[type=radio] {
+    display: none;
 }
 
-.d-block img {
-    border-color: solid 2px black;
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 600px;
+    display: flex;
+    transform-style: preserve-3d;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto; /* Adicione esta linha para centralizar horizontalmente */
+    margin-top: 80px;
+}
+
+.cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+#item-1:checked ~ .cards #song-5,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2,
+#item-4:checked ~ .cards #song-3,
+#item-5:checked ~ .cards #song-4 {
+    transform: translateX(2) scale(1);
+    opacity: 0,6;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-4,
+#item-2:checked ~ .cards #song-5,
+#item-3:checked ~ .cards #song-1,
+#item-4:checked ~ .cards #song-2,
+#item-5:checked ~ .cards #song-3 {
+    transform: translateX(0) scale(1);
+    opacity: 0,6;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-4,
+#item-3:checked ~ .cards #song-5,
+#item-4:checked ~ .cards #song-1,
+#item-5:checked ~ .cards #song-2 {
+    transform: translateX(-50%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-4,
+#item-4:checked ~ .cards #song-5,
+#item-5:checked ~ .cards #song-1 {
+    transform: translateX(60%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3,
+#item-4:checked ~ .cards #song-4,
+#item-5:checked ~ .cards #song-5 {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+#item-1:checked ~ .cards #song-1 img,
+#item-2:checked ~ .cards #song-2 img,
+#item-3:checked ~ .cards #song-3 img,
+#item-2:checked ~ .cards #song-4 img,
+#item-2:checked ~ .cards #song-5 img {
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }
