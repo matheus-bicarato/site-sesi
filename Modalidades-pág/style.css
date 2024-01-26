@@ -20,7 +20,7 @@ body {
 
 header {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding: 12px;
     background-color: #062F6D;
 }
@@ -31,12 +31,16 @@ header h1 {
     font-family: '  Rowdies';
 }
 
-.carousel-item img {
+/* .carousel-item img {
     filter: blur(2px);
     border-radius: 12px;
-}
+} */
 
 .carousel-caption h5, p{
     color: white;
     font-family: 'Inter';
+}
+
+.d-block img {
+    border-color: solid 2px black;
 }
