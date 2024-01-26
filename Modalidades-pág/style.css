@@ -27,7 +27,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 30px 10px;
-    background: white;
+    background-image: url(../imagens_sesi/background-modalidades\ \(2\).png);
+    background-size: cover;
     transition: background 0.4s ease-in;
 }
 
@@ -84,46 +85,6 @@ img {
     margin-bottom: 20px;
 }
 
-#item-1:checked ~ .cards #song-5,
-#item-2:checked ~ .cards #song-1,
-#item-3:checked ~ .cards #song-2,
-#item-4:checked ~ .cards #song-3,
-#item-5:checked ~ .cards #song-4 {
-    transform: translateX(2) scale(1);
-    opacity: 0,6;
-    z-index: 0;
-}
-
-#item-1:checked ~ .cards #song-4,
-#item-2:checked ~ .cards #song-5,
-#item-3:checked ~ .cards #song-1,
-#item-4:checked ~ .cards #song-2,
-#item-5:checked ~ .cards #song-3 {
-    transform: translateX(0) scale(1);
-    opacity: 0,6;
-    z-index: 0;
-}
-
-#item-1:checked ~ .cards #song-3,
-#item-2:checked ~ .cards #song-4,
-#item-3:checked ~ .cards #song-5,
-#item-4:checked ~ .cards #song-1,
-#item-5:checked ~ .cards #song-2 {
-    transform: translateX(-50%) scale(0.8);
-    opacity: 0.6;
-    z-index: 0;
-}
-
-#item-1:checked ~ .cards #song-2,
-#item-2:checked ~ .cards #song-3,
-#item-3:checked ~ .cards #song-4,
-#item-4:checked ~ .cards #song-5,
-#item-5:checked ~ .cards #song-1 {
-    transform: translateX(60%) scale(0.8);
-    opacity: 0.6;
-    z-index: 0;
-}
-
 #item-1:checked ~ .cards #song-1,
 #item-2:checked ~ .cards #song-2,
 #item-3:checked ~ .cards #song-3,
@@ -134,13 +95,55 @@ img {
     z-index: 1;
 }
 
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-4,
+#item-4:checked ~ .cards #song-5,
+#item-5:checked ~ .cards #song-1 {
+    transform: translateX(100%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-4,
+#item-3:checked ~ .cards #song-5,
+#item-4:checked ~ .cards #song-1,
+#item-5:checked ~ .cards #song-2 {
+    transform: translateX(-100%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-4,
+#item-2:checked ~ .cards #song-5,
+#item-3:checked ~ .cards #song-1,
+#item-4:checked ~ .cards #song-2,
+#item-5:checked ~ .cards #song-3 {
+    transform: translateX(-200%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-5,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2,
+#item-4:checked ~ .cards #song-3,
+#item-5:checked ~ .cards #song-4 {
+    transform: translateX(200%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
 #item-1:checked ~ .cards #song-1 img,
 #item-2:checked ~ .cards #song-2 img,
 #item-3:checked ~ .cards #song-3 img,
-#item-2:checked ~ .cards #song-4 img,
-#item-2:checked ~ .cards #song-5 img {
+#item-4:checked ~ .cards #song-4 img,
+#item-5:checked ~ .cards #song-5 img {
     box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }
+
+
 
 /* ____________________________ */
 /* Footer */
@@ -185,4 +188,52 @@ img {
     text-align: center;
     color: #fff;
     background-color: #333; /* Substitua pela cor desejada */
+}
+
+/* __________________________ */
+/* Responsividade */
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        margin: 0;
+        width: 460px;
+        max-width: 100%;
+        padding: 12px;
+    }
+
+    .container {
+        margin-top: 30px;
+        max-width: 260px; /* Alterado para ocupar a largura total */
+    }
+    .footer-cima {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .footer-cima label,
+    .footer-cima b,
+    .footer-cima a {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .logo-sesi {
+        width: 40%; /* Ajustado para ocupar 80% da largura da tela */
+        height: auto;
+        border-radius: 0;
+        cursor: pointer;
+    }
+
+    footer {
+        max-width: 100%;
+    }
+
+    .footer-baixo {
+        padding: 10px;
+    }
 }
