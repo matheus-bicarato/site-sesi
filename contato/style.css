@@ -93,6 +93,14 @@ header {
     color: var(--cor-secundaria);
 }
 
+#hamburg {
+    display: none;
+}
+
+#icon-x {
+    display: none;
+}
+
 /* ----- Body ----- */
 .center {
     display: inline-flex;
@@ -249,7 +257,6 @@ header {
 /* footer */
 
 footer {
-    position: absolute;
     width: 100%;
     bottom: 0;
 }
@@ -297,5 +304,79 @@ footer {
 /* responsividade */
 
 @media (max-width: 890px) {
+    /* header */
+    header {
+        height: 128px;
+    }
+
+    #logo img {
+        height: 30px;
+    }
+
+    /* condifg padrão da lista */
+    .options-list-activate ul {
+        font-family: 'Inter', sans-serif;
+        list-style-type: none;
+        margin: 0;
+    }
     
+    .options-list-activate ul i {
+        font-size: 25px;
+        color: var(--cor-secundaria);
+    }
+    
+    .options-list-activate ul li a {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 12.5px;
+        text-decoration: none;
+        color: var(--cor-principal);
+    }
+
+    /* linha para esconder o menu de opções */
+    .options-list-header {
+        display: none;
+    }
+
+    .options-list-activate {
+        display: flex;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid black;
+        padding: 15px;
+        top: 0;
+        padding-top: 35px;
+    }
+
+    #hamburg {
+        display: block;
+        width: 25px;
+        height: 25px;
+        border: none;
+        outline: none;
+        background-color: #fff;
+    }
+
+    #hamburg img {
+        width: 25px;
+        background-color: none;
+    }
+
+    #icon-x {
+        display: block;
+        position: absolute;
+        top: 10%;
+        right: 3%;
+        width: 15px;
+        height: 15px;
+        border: none;
+        outline: none;
+        background-color: #fff;
+    }
+
+    #icon-x img {
+        width: 15px;
+        background-color: none;
+    }
 }
