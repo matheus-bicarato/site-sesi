@@ -247,6 +247,13 @@ header {
 }
 
 /* footer */
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
 .footer-cima {
     display: inline-flex;
     background-color: var(--cor-principal);
@@ -263,7 +270,7 @@ header {
     cursor: pointer;
 }
 
-.footer-cima label {
+.footer-cima p {
     font-size: 12.5px;
 }
 
@@ -281,4 +288,14 @@ header {
     text-align: center;
     color: #fff;
     background-color: var(--cor-terciaria);
+}
+
+.footer-baixo p {
+    font-size: 12.5px;
+}
+
+/* responsividade */
+
+@media (max-width: 890px) {
+    
 }
