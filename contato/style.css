@@ -379,4 +379,17 @@ footer {
         width: 15px;
         background-color: none;
     }
+
+    /* desabilita a barra de pesquisa que fica direto no header */
+    .search {
+        display: none;
+    }
+
+    /* corpo do projeto */
+    .center {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        gap: 100px;
+    }
 }
