@@ -469,6 +469,14 @@ footer {
         height: 21.25px;
         width: 212.5px;
     }
+
+    .input-form input, .input-form textarea {
+        font-size: 12.5px;
+    }
+
+    .input-form textarea {
+        width: 212.5px;
+    }
     
     .button-submit {
         font-size: 10px;
