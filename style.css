@@ -138,7 +138,8 @@ main{
     display: flex;
     transition: all ease-in-out 0.3s;
     border-radius: 10px;
-    width="400px" height="300px
+    width:"400px";
+    height:"300px";
 }
 
 .list2 li img {
@@ -172,7 +173,78 @@ main{
 
 }
 
+/* Footer */
+.footer-cima {
+    display: inline-flex;
+    background-color: #062F6D; /* Substitua pela cor desejada */
+    width: 100%;
+    color: white;
+    margin-top: 50px;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+}
 
+.logo-sesi {
+    width: 200px;
+    height: 55px;
+    border-radius: 0;
+    cursor: pointer;
+}
 
+.footer-cima label {
+    font-size: 12.5px;
+}
 
+.footer-cima b {
+    font-size: 16px;
+}
 
+.footer-cima a {
+    font-size: 18.5px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.footer-cima a:hover {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.footer-baixo {
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #021F4B; /* Substitua pela cor desejada */
+}
+
+.icone-fc {
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+}
+
+.footer-cima a {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1300px){
+    
+    /* CABEÇÃLHO */
+    .barra{
+        height: 1px;
+        width: 100%;
+    }
+
+    header{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .search input {
+        width: 280px;
+    }
+    
+
+}
