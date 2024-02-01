@@ -93,6 +93,18 @@ header {
     color: var(--cor-secundaria);
 }
 
+.search-Responsive {
+    display: none;
+}
+
+#hamburg {
+    display: none;
+}
+
+#icon-x {
+    display: none;
+}
+
 /* ----- Body ----- */
 .center {
     display: inline-flex;
@@ -246,7 +258,19 @@ header {
     color: black;
 }
 
+.contact-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 /* footer */
+
+footer {
+    width: 100%;
+    bottom: 0;
+}
+
 .footer-cima {
     display: inline-flex;
     background-color: var(--cor-principal);
@@ -263,7 +287,7 @@ header {
     cursor: pointer;
 }
 
-.footer-cima label {
+.footer-cima p {
     font-size: 12.5px;
 }
 
@@ -281,4 +305,214 @@ header {
     text-align: center;
     color: #fff;
     background-color: var(--cor-terciaria);
+}
+
+.footer-baixo p {
+    font-size: 12.5px;
+}
+
+/* responsividade */
+
+@media (max-width: 890px) {
+    /* header */
+    header {
+        height: 128px;
+    }
+
+    #logo img {
+        height: 30px;
+    }
+
+    /* condifg padrão da lista */
+    .options-list-activate ul {
+        font-family: 'Inter', sans-serif;
+        list-style-type: none;
+        margin: 0;
+    }
+    
+    .options-list-activate ul i {
+        font-size: 25px;
+        color: var(--cor-secundaria);
+    }
+    
+    .options-list-activate ul li a {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 12.5px;
+        text-decoration: none;
+        color: var(--cor-principal);
+    }
+
+    /* linha para esconder o menu de opções */
+    .options-list-header {
+        display: none;
+    }
+
+    .options-list-activate {
+        display: flex;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid black;
+        padding: 15px;
+        top: 0;
+        padding-top: 35px;
+        z-index: 1;
+    }
+
+    #hamburg {
+        display: block;
+        width: 25px;
+        height: 25px;
+        border: none;
+        outline: none;
+        background-color: #fff;
+    }
+
+    #hamburg img {
+        width: 25px;
+        background-color: none;
+    }
+
+    #icon-x {
+        display: block;
+        position: absolute;
+        top: 10%;
+        right: 3%;
+        width: 15px;
+        height: 15px;
+        border: none;
+        outline: none;
+        background-color: #fff;
+    }
+
+    #icon-x img {
+        width: 15px;
+        background-color: none;
+    }
+
+    /* desabilita a barra de pesquisa que fica direto no header */
+    .search {
+        display: none;
+    }
+
+    .search-Responsive {
+        margin: 5px 0 5px 0;
+        display: block;
+        position: relative;
+        height: 30px;
+        /* background-color: red; */
+        
+    }
+    
+    .search-Responsive input {
+        height: 30px;
+        width: 165px;
+        border: none;
+        background-color: var(--background-input);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        outline: none;
+        padding: 5px;
+    }
+    
+    .search-Responsive button {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        border: none;
+        background-color: var(--cor-secundaria);
+        color: #fff;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        cursor: pointer;
+    }
+
+    .search-Responsive button i {
+        color: #fff;
+        font-size: 15px;
+    }
+    
+    .search-Responsive:hover button {
+        background-color: var(--cor-secundaria-hover);
+    }
+
+    /* corpo do projeto */
+    .center {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        gap: 100px;
+        z-index: 0;
+    }
+
+    .title-right, .section-left h1 {
+        margin-top: 25px;
+        font-size: 35px;
+    }
+
+    .form-contact {
+        margin-top: 25px;
+        width: 297.5px;
+        height: 382.5px;
+    }
+
+    .form-contact h2 {
+        font-size: 17px;
+    }
+
+    .input-form label {
+        font-size: 11.9px;
+    }
+
+    .input-form input {
+        height: 21.25px;
+        width: 212.5px;
+    }
+
+    .input-form input, .input-form textarea {
+        font-size: 12.5px;
+    }
+
+    .input-form textarea {
+        width: 212.5px;
+    }
+    
+    .button-submit {
+        font-size: 10px;
+    }
+
+    #google-map {
+        width: 340px;
+        height: 170px;
+        margin: auto;
+    }
+
+    .map label {
+        font-size: 13.6px;
+    }
+
+    .contact-sociais {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* footer */
+    .logo-sesi {
+        height: 17.5px;
+    }
+
+    .footer-cima p {
+        width: 142.35px;
+        font-size: 9.375px;
+    }
+
+    .footer-cima a {
+        font-size: 10.625px;
+    }
+
+    .footer-baixo p {
+        font-size: 9.375px;
+    }
 }

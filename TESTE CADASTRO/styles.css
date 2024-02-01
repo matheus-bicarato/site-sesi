@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
   font-family: 'Gotu', sans-serif;
@@ -19,6 +18,15 @@
   --cor-secundaria-hover: #2b75ec;
 }
 
+:root {
+  --cor-principal: #062F6D;
+  --cor-secundaria: #155FD5;
+  --cor-terciaria: #021f4b;
+  --cor-secundaria-hover: #2b75ec;
+  --background-input: rgb(203, 203, 203);
+  --icons-color: rgb(164, 164, 164);
+}
+
 
 
 body {
@@ -26,7 +34,6 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
-  overflow: hidden;
 }
 
 /* HEADER__________________ */
@@ -38,7 +45,6 @@ header {
   justify-content: space-around;
   align-items: center;
   border-top: 35px solid var(--cor-principal);
-  border-bottom: 1px solid var(--cor-principal);
   padding-bottom: 5px;
 }
 
@@ -100,13 +106,17 @@ h2 {
   position: absolute;
   margin-top: 20px;
   margin-left: 20px;
-  z-index: 1;
+  z-index: 5;
 }
 
+.input-group input.form-control:focus + .input-group-prepend .input-group-text i {
+  margin-left: 10px; /* Ajuste o valor conforme necessário */
+}
 
 /* Alinha o texto do placeholder um pouco para a direita */
 .input-group input.form-control::placeholder {
   padding-left: 20px; /* Ajuste o valor conforme necessário */
+  margin-left: 30px;
 }
 
 .esqueceu-senha {
@@ -160,3 +170,88 @@ h2 {
 .redes-imagens:hover {
   opacity: 0.7;
 }
+
+/* Footer */
+
+footer {
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-cima {
+  display: inline-flex;
+  background-color: var(--cor-principal);
+  width: 100%;
+  color: white;
+  margin-top: 50px;
+  justify-content: space-around;
+  height: 100px;
+  align-items: center;
+}
+
+.logo-sesi {
+  height: 35px;
+  cursor: pointer;
+}
+
+.footer-cima p {
+  font-size: 12.5px;
+}
+
+.footer-cima a {
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.footer-cima a:hover {
+  text-decoration: underline;
+}
+
+.footer-baixo {
+  padding: 0.1px;
+  text-align: center;
+  color: #fff;
+  background-color: var(--cor-terciaria);
+}
+
+.footer-baixo p {
+  font-size: 12.5px;
+}
+
+
+@media (max-width: 890px) {
+    /* footer */
+    .logo-sesi {
+      height: 17.5px;
+  }
+
+  .footer-cima p {
+      width: 142.35px;
+      font-size: 9.375px;
+  }
+
+  .footer-cima a {
+      font-size: 10.625px;
+  }
+
+  .footer-baixo p {
+      font-size: 9.375px;
+  }
+}
+
+
+  /* Adicione este estilo para ocultar os ícones quando há texto nos campos */
+  /* .input-group-prepend .bi {
+    display: none;
+} */
+
+/* Exibe os ícones apenas quando o input está focado */
+/* .input-group input:focus + .input-group-prepend .bi {
+    display: absolute;
+} */
+
+.input-group-prepend .bi {
+  display: none;
+}
+
+
