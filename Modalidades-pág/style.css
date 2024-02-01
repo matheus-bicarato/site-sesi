@@ -177,10 +177,12 @@ img {
 .footer-cima a {
     font-size: 18.5px;
     cursor: pointer;
+    transition: all 0.6s ease;
 }
 
 .footer-cima a:hover {
     text-decoration: underline;
+    font-size: 20px;
 }
 
 .footer-baixo {
@@ -190,17 +192,30 @@ img {
     background-color: #021F4B; /* Substitua pela cor desejada */
 }
 
+.icone-fc {
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+}
+
+.footer-cima a {
+    display: flex;
+    justify-content: center;
+}
+
 /* __________________________ */
 /* Responsividade */
 
 @media only screen and (max-width: 600px) {
     body {
-        padding: 10px;
+        padding: 2px;
+        max-width: 420px;
+        max-height: 600px;
     }
 
     header {
         margin: 0;
-        width: 460px;
+        width: 100%;
         max-width: 100%;
         padding: 12px;
     }
@@ -213,6 +228,7 @@ img {
         flex-direction: column;
         text-align: center;
         height: auto;
+        padding: 12px;
     }
 
     .footer-cima label,
@@ -220,6 +236,10 @@ img {
     .footer-cima a {
         font-size: 14px;
         margin-top: 5px;
+    }
+
+    .footer-cima a:hover {
+        font-size: 16px;
     }
 
     .logo-sesi {
@@ -230,6 +250,7 @@ img {
     }
 
     footer {
+        width: 100%;
         max-width: 100%;
     }
 
