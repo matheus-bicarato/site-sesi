@@ -238,6 +238,10 @@ img {
         margin-top: 5px;
     }
 
+    .footer-cima a:hover {
+        font-size: 16px;
+    }
+
     .logo-sesi {
         width: 40%; /* Ajustado para ocupar 80% da largura da tela */
         height: auto;
