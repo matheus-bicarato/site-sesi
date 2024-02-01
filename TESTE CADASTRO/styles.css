@@ -251,7 +251,7 @@ footer {
 } */
 
 .input-group-prepend .bi {
-  display: none;
+  display: block;
 }
 
 
